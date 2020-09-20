@@ -72,6 +72,26 @@ header {
             @include button-black;
         }
     }
+    &.blue {
+        > header {
+            background-color: var(--blue);
+        }
+        footer.fixed {
+            button[type=submit], a.black {
+                @include button-blue;
+            }
+        }
+	}
+	&.green {
+        > header {
+            background-color: var(--green);
+        }
+        footer.fixed {
+            button[type=submit], a.black {
+                @include button-green;
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -83,6 +103,18 @@ header {
             h1 {
                 font-size: 32px;
             }
+        }
+        footer.fixed {
+			justify-content: flex-start;
+			button + button, a + a, button + a, a + button {
+				margin-right: var(--space);
+			}
+			button, a {
+				order: 1;
+				&:first-child {
+					order: 2;
+				}
+			}
         }
     }
 }
