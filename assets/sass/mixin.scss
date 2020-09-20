@@ -13,7 +13,7 @@
     cursor: pointer;
 	background: transparent;
 	color: var(--black);
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     &:hover {
         background-color: var(--black-10);
     }
