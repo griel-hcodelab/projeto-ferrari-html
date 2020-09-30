@@ -4,7 +4,7 @@
 	width: 100%;
 	background-color: var(--gray-5);
 	position: relative;
-	z-index: 3;
+	z-index: 5;
 	.italy {
 		width: 100%;
 		position: absolute;
@@ -22,7 +22,7 @@
 		top: 15px;
 		width: 72px;
 		right: calc(50vw - 36px);
-		z-index: 5;
+		z-index: 7;
 	}
 	.menu {
 		transition: right .5s ease-in-out;
@@ -33,7 +33,7 @@
 		position: fixed;
 		right: -300px;
 		top: 0;
-		z-index: 4;
+		z-index: 5;
 		flex-direction: column;
 		justify-content: space-between;
 		hr {
@@ -70,9 +70,11 @@
 			ul {
 				margin: 0;
 				padding: 0;
-				margin-top: 249px;
+				margin-top: 169px;
 				width: 100%;
 				flex-direction: column;
+				max-height: calc(100vh - 250px);
+				overflow-y: auto;
 				li {
 					padding: 14px 0;
 					list-style: none;
