@@ -1,58 +1,58 @@
 #schedules-service {
-    .options {
-        flex-direction: column;
-        margin-top: var(--space);
-        label {
-            cursor: pointer;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: var(--space);
-            .square {
-                width: 24px;
-                height: 24px;
-                border: 2px solid var(--gray-10);
-                justify-content: center;
-                align-items: center;
-                > div {
-                    width: 14px;
-                    height: 14px;
-                    background-color: var(--gray);
-                    opacity: 0;
-                    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                }
-            }
-            &:hover {
-                .square {
-                    border: var(--gray-8) solid 2px;
-                    > div {
-                        opacity: 0.2;
-                    }
-                }
-            }
-            input {
-                display: none;
-                &:checked + .square {
-                    > div {
-                        opacity: 1;
-                    background-color: var(--blue);
-                    }
-                    
-                }
-            }
-            .content {
-                flex-direction: column;
-                padding-left: calc(var(--space) - 10px); //Apenas para treinar
-                font-size: 16px;
-                color: var(--dark-0);
-                line-height: calc(var(--space) + 4px);
-                .description {
-                    font-size: 14px;
-                    color: var(--gray-2);
-                }
-                .price {
-                    font-weight: bold;
-                }
-            }
+  .options {
+    flex-direction: column;
+    margin-top: var(--space);
+    label {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: var(--space);
+      .square {
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--gray-10);
+        justify-content: center;
+        align-items: center;
+        > div {
+          width: 14px;
+          height: 14px;
+          background-color: var(--gray);
+          opacity: 0;
+          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+      }
+      &:hover {
+        .square {
+          border: var(--gray-8) solid 2px;
+          > div {
+            opacity: 0.2;
+          }
+        }
+      }
+      input {
+        display: none;
+        &:checked + .square {
+          > div {
+            opacity: 1;
+            background-color: var(--blue);
+          }
+        }
+      }
+      .content {
+        flex-direction: column;
+        padding-left: calc(var(--space) - 10px); //Apenas para treinar
+        font-size: 16px;
+        color: var(--dark-0);
+        line-height: calc(var(--space) + 4px);
+        .description {
+          font-size: 14px;
+          color: var(--gray-2);
+        }
+        .price {
+          font-weight: bold;
+        }
+      }
     }
+  }
 }
+
