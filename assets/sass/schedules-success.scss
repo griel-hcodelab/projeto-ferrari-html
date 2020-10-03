@@ -1,0 +1,42 @@
+#schedules-success {
+    main {
+        section {
+            display: block;
+            padding-left: var(--space);
+            h3 {
+                color: var(--gray-0);
+                font-size: 22px;
+                small {
+                    font-size: 16;
+                    display: block;
+                }
+            }
+        }
+        footer {
+            justify-content: center;
+            align-items: center;
+            a {
+                @include button-green;
+                padding: 0 var(--space);
+            }
+            
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #schedules-success {
+        main {
+            footer {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+
+        aside {
+            display: flex;
+        }
+    }
+    
+}

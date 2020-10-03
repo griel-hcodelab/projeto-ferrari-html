@@ -72,7 +72,22 @@
 		.gallery {
 			flex-direction: row;
 		}
+		> header {
+			ul {
+				display: flex;
+				color: var(--white);
+				font-size: 30px;
+				margin: 0;
+				width: 440px;
+				justify-content: space-around;
+				padding-left: 0;
+			}
+			h1 {
+				margin: unset;
+			}
+		}
 	}
+
 }
 
 @media (min-width: 1200px) {
